@@ -12,9 +12,24 @@ export const basic: ComponentStory<typeof Avatar> = () => {
       <Avatar name='Son Goku' src='https://img.icons8.com/windows/512/son-goku.png' margin='1.5' />
       <Avatar name='Son Goku' src='https://img.icons8.com/windows/512/son-goku.pn' margin='1.5' />
     </Flex>
-    // <Flex>
-    //     <Box>
-    //     </Box>
-    // </Flex>
+  )
+}
+
+export const withSize: ComponentStory<typeof Avatar> = () => {
+  return (
+    <Flex>
+      <Avatar
+        name='Son Goku'
+        src='https://img.icons8.com/windows/512/son-goku.png'
+        margin='1.5'
+        size='2xl'
+      />
+      <Avatar
+        name='Son Goku'
+        src='https://img.icons8.com/windows/512/son-goku.pn'
+        margin='1.5'
+        size='4xl'
+      />
+    </Flex>
   )
 }
